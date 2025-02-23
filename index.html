@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="src/css/main.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="#begining">Sākums</a></li>
+                <li><a href="#rules">Noteikumi</a></li>
+                <li><a href="#game">Spēle</a></li>
+                <li><a href="#fact">Kaķa fakts</a></li>
+            </ul>
+        </header>
+        <div id="begining">
+            <h1 id="heading">Akmens šķēres papīrīts</h1>
+            <div class="rps">                
+                <img id="rock" class="animated-rps" src="src/images/rock.png">
+                <img id="scissors" class="animated-rps" src="src/images/scissors.png">
+                <img id="paper" class="animated-rps" src="src/images/paper.png">
+            </div>
+        </div>
+        <div id="rules">
+            <div class="heading"><h2>Noteikumi</h2></div>
+            <div id="cards">
+                <div class="card">
+                    <h3>Akmens</h3>
+                    <img src="src/images/rock.png">
+                    <p>Akmens uzvar šķēres</p>
+                </div>
+                <div class="card">
+                    <h3>Šķēres</h3>
+                    <img src="src/images/scissors.png">
+                    <p>Šķēres uzvar papīru</p>
+                </div>
+                <div class="card">
+                    <h3>Papīrs</h3>
+                    <img src="src/images/paper.png">
+                    <p>Papīrs uzvar akmeni</p> 
+                </div>
+            </div>
+        </div>
+        <div id="game">
+            <div class="heading" id="score"><h2></h2></div>
+            <div id="hands">
+                <div class="hands" id="myHand">
+                    <img id="tests">
+                    <!-- IDK how to fix it, <img id="tests"> is here-->
+                    <div class="rps" id="mirror-container">     
+                        <img class="shakeRock" src="src/images/rock.png">
+                        <img id="my-select">             
+                    </div>
+                    <div class="buttons">
+                        <button class="button" id="rock">Akmens</button>
+                        <button class="button" id="scissors">Šķēres</button>
+                        <button class="button" id="paper">Papīrīts</button>
+                    </div>
+                </div>
+                <div class="hands" id="compHand">
+                    <div class="rps">
+                        <img class="shakeRock" src="src/images/rock.png">
+                        <img id="random-select">           
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fact">
+            <p id="catFact"></p>
+        </div>
+        <script src="src/script/main.js" defer></script>
+    </body>
+</html>
